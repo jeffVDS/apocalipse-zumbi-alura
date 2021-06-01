@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\ControlaJogador.cs" />
+    <Compile Include="Assets\Scripts\ControlaCamera.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Modelos3D\Personagens\Animacoes\Animacoes.txt" />

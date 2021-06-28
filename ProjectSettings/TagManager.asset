@@ -3,12 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Inimigo
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Chao
   - Water
   - UI
   - 

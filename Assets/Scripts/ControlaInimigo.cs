@@ -8,15 +8,17 @@ public class ControlaInimigo : MonoBehaviour
     public float distanciaMinima = 2.5f;
     public GameObject jogador;
 
-    private Rigidbody rigidBody;
+    private Rigidbody rb;
     private Vector3 direcao;
     private Quaternion rotacao;
+    private Animator animator;
     
 
     // Start is called before the first frame update
     void Start()
     {
-        rigidBody = GetComponent<Rigidbody>();
+        rb = GetComponent<Rigidbody>();
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -29,14 +31,27 @@ public class ControlaInimigo : MonoBehaviour
 
     private void FixedUpdate()
     {
-        float distancia = Vector3.Distance(rigidBody.position, jogador.transform.position);
+        float distancia = Vector3.Distance(rb.position, jogador.transform.position);
 
         if (distancia > distanciaMinima)
         {
-            rigidBody.MovePosition(rigidBody.position + (direcao.normalized * velocidade * Time.deltaTime));
+            rb.MovePosition(rb.position + (direcao.normalized * velocidade * Time.deltaTime));
 
-            rigidBody.MoveRotation(rotacao);
+            animator.SetBool("Atacando", false);
+        }
+        else
+        {
+            animator.SetBool("Atacando", true);
         }
 
+        rb.MoveRotation(rotacao);
+
+    }
+
+    void AtacaJogador()
+    {
+        Time.timeScale = 0;
+        jogador.GetComponent<ControlaJogador>().textoGameOver.SetActive(true);
+        jogador.GetComponent<ControlaJogador>().vivo = false;
     }
 }

@@ -4,19 +4,29 @@ using UnityEngine;
 
 public class Bala : MonoBehaviour
 {
-    private Rigidbody rigidbody;
+    private Rigidbody rb;
 
     public float velocidade = 20;
 
     private void Start()
     {
-        this.rigidbody = GetComponent<Rigidbody>();
+        this.rb = GetComponent<Rigidbody>();
     }
 
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        this.rigidbody.MovePosition(this.rigidbody.position + transform.forward * velocidade * Time.deltaTime);
+        this.rb.MovePosition(this.rb.position + transform.forward * velocidade * Time.deltaTime);
+    }
+
+    private void OnTriggerEnter(Collider objetoColidido)
+    {
+        if (objetoColidido.CompareTag("Inimigo"))
+        {
+            Destroy(objetoColidido.gameObject);
+        }
+
+        Destroy(this.gameObject);
     }
 }

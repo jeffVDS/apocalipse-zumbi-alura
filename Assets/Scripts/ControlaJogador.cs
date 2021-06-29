@@ -2,31 +2,40 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class ControlaJogador : MonoBehaviour
 {
     public float velocidade = 10;
     public LayerMask mascaraChao;
     public GameObject textoGameOver;
+    public Text textoKillCount;
+    public int killCount;
     public bool vivo = true;
 
 
     private Rigidbody rigidBody;
     private Vector3 direcao;
     private Vector3 movimentoNormalizado;
-    
 
-    
+
+
+
     // Start is called before the first frame update
     void Start(){
         rigidBody = GetComponent<Rigidbody>();
 
+        killCount = 0;
+        textoKillCount.gameObject.SetActive(true);
+        
         Time.timeScale = 1;
     }
     void Update()
     {
         if (vivo)
         {
+            textoKillCount.text = "Matou " + killCount;
+
             float eixoX = Input.GetAxis("Horizontal");
             float eixoZ = Input.GetAxis("Vertical");
 

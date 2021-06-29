@@ -5,12 +5,15 @@ using UnityEngine;
 public class Bala : MonoBehaviour
 {
     private Rigidbody rb;
-
+    private GameObject jogador;
+    
     public float velocidade = 20;
+    
 
     private void Start()
     {
         this.rb = GetComponent<Rigidbody>();
+        jogador = GameObject.FindWithTag("Player");
     }
 
 
@@ -25,6 +28,7 @@ public class Bala : MonoBehaviour
         if (objetoColidido.CompareTag("Inimigo"))
         {
             Destroy(objetoColidido.gameObject);
+            jogador.GetComponent<ControlaJogador>().killCount++;
         }
 
         Destroy(this.gameObject);

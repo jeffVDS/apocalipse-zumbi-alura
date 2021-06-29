@@ -6,12 +6,13 @@ public class ControlaInimigo : MonoBehaviour
 {
     public float velocidade = 5;
     public float distanciaMinima = 2.5f;
-    public GameObject jogador;
-
+    
+    private GameObject jogador;
     private Rigidbody rb;
     private Vector3 direcao;
     private Quaternion rotacao;
     private Animator animator;
+    
     
 
     // Start is called before the first frame update
@@ -19,6 +20,11 @@ public class ControlaInimigo : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         animator = GetComponent<Animator>();
+        jogador = GameObject.FindWithTag("Player");
+
+        int roupaZumbi = Random.Range(1,28);
+
+        this.transform.GetChild(roupaZumbi).gameObject.SetActive(true);
     }
 
     // Update is called once per frame

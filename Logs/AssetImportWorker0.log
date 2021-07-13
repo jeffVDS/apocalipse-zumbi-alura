@@ -1,0 +1,606 @@
+Using pre-set license
+Built from '2020.3/release' branch; Version is '2020.3.12f1 (b3b2c6512326) revision 11776710'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Enterprise; OS build 19042.1052; Version 2009; 64bit' Language: 'en' Physical Memory: 15980 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.12f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/j.diniz.silva/Documents/Projetos/Games/apocalipse-zumbi-alura
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+50666
+Successfully changed project path to: C:/Users/j.diniz.silva/Documents/Projetos/Games/apocalipse-zumbi-alura
+C:/Users/j.diniz.silva/Documents/Projetos/Games/apocalipse-zumbi-alura
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 36.02 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.12f1 (b3b2c6512326)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/j.diniz.silva/Documents/Projetos/Games/apocalipse-zumbi-alura/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) UHD Graphics (ID=0x9b41)
+    Vendor:   
+    VRAM:     7990 MB
+    Driver:   27.20.100.8681
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56652
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001921 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 35.66 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.162 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.003878 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.36 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.099 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
+Refreshing native plugins compatible for Editor in 0.37 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1427 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.0 MB.
+System memory in use after: 70.1 MB.
+
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 1862.
+Total: 1.874000 ms (FindLiveObjects: 0.141700 ms CreateObjectMapping: 0.035200 ms MarkObjects: 1.627000 ms  DeleteObjects: 0.066200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/Kenney/PNG/green_button07.png
+  artifactKey: Guid(4426cf70782e3b5428b7b1ac4241578a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenney/PNG/green_button07.png using Guid(4426cf70782e3b5428b7b1ac4241578a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dba870ac3212a39abc149b8dca52bc24') in 0.097746 seconds 
+  Import took 0.100118 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004834 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.36 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.955 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.40 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1421 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 72.9 MB.
+System memory in use after: 73.0 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 1871.
+Total: 2.445100 ms (FindLiveObjects: 0.171200 ms CreateObjectMapping: 0.038600 ms MarkObjects: 2.217800 ms  DeleteObjects: 0.016400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 136.298218 seconds.
+  path: Assets/Kenney/PNG/grey_button12.png
+  artifactKey: Guid(4f368b50d2ad6474fa7b11ad5329af41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenney/PNG/grey_button12.png using Guid(4f368b50d2ad6474fa7b11ad5329af41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efb6064be18c1298d49e28d7b79d9491') in 0.054032 seconds 
+  Import took 0.057506 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000319 seconds.
+  path: Assets/Kenney/PNG/grey_circle.png
+  artifactKey: Guid(a62808df12e30e8488d1db1ae84992c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenney/PNG/grey_circle.png using Guid(a62808df12e30e8488d1db1ae84992c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6514f403886028cb709716ff6a1e2ecb') in 0.029517 seconds 
+  Import took 0.032044 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000391 seconds.
+  path: Assets/Kenney/PNG/grey_button15.png
+  artifactKey: Guid(40240882f8fd06c43aa0ea908605c343) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenney/PNG/grey_button15.png using Guid(40240882f8fd06c43aa0ea908605c343) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddde41f7ab012de6dc7c2d7bb6e91556') in 0.043672 seconds 
+  Import took 0.047429 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000265 seconds.
+  path: Assets/Kenney/PNG/grey_crossGrey.png
+  artifactKey: Guid(49619fb1a574deb4ea8872235fef70e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenney/PNG/grey_crossGrey.png using Guid(49619fb1a574deb4ea8872235fef70e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '140c0824ec3102cb05e729852e5b9170') in 0.030260 seconds 
+  Import took 0.033662 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000339 seconds.
+  path: Assets/Kenney/PNG/grey_crossWhite.png
+  artifactKey: Guid(291546b6c0f6a2a468d5255d2b271cec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenney/PNG/grey_crossWhite.png using Guid(291546b6c0f6a2a468d5255d2b271cec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '484bd40eedabf74f45b168f7f8463768') in 0.048050 seconds 
+  Import took 0.051503 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000302 seconds.
+  path: Assets/Kenney/PNG/grey_checkmarkWhite.png
+  artifactKey: Guid(1816b9abd8ce33e499b0d63c7323acf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenney/PNG/grey_checkmarkWhite.png using Guid(1816b9abd8ce33e499b0d63c7323acf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99967c9c14b2eb1c8dbd9ff797233be7') in 0.030966 seconds 
+  Import took 0.035648 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000553 seconds.
+  path: Assets/Kenney/PNG/grey_checkmarkGrey.png
+  artifactKey: Guid(f196d26444305b346927b7c15d4fb363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenney/PNG/grey_checkmarkGrey.png using Guid(f196d26444305b346927b7c15d4fb363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '378a78881f2b1259e22c4c0c5060ad26') in 0.038260 seconds 
+  Import took 0.042540 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000298 seconds.
+  path: Assets/Kenney/PNG/grey_sliderHorizontal.png
+  artifactKey: Guid(d9ed021c36ea1824fba4d82e7fdfd21b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenney/PNG/grey_sliderHorizontal.png using Guid(d9ed021c36ea1824fba4d82e7fdfd21b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ace38899e8f3d98c887dccde17144e73') in 0.032759 seconds 
+  Import took 0.036187 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000256 seconds.
+  path: Assets/Kenney/PNG/grey_sliderLeft.png
+  artifactKey: Guid(9d8ca9f0e67bcdc42b6d951774748a80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenney/PNG/grey_sliderLeft.png using Guid(9d8ca9f0e67bcdc42b6d951774748a80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca9e9b3ed3df11566126dc65c941d22c') in 0.033034 seconds 
+  Import took 0.036595 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000304 seconds.
+  path: Assets/Kenney/PNG/red_boxCheckmark.png
+  artifactKey: Guid(b8e0739f1c347514faa3c60551b796ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenney/PNG/red_boxCheckmark.png using Guid(b8e0739f1c347514faa3c60551b796ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e20e202abd6a37e09d5589001e7fc28') in 0.038613 seconds 
+  Import took 0.041646 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000320 seconds.
+  path: Assets/Kenney/PNG/grey_sliderVertical.png
+  artifactKey: Guid(169831a4965662f4fb6c607806748088) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenney/PNG/grey_sliderVertical.png using Guid(169831a4965662f4fb6c607806748088) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f80cb3713899756c2730662afed0c4b') in 0.032143 seconds 
+  Import took 0.034920 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000413 seconds.
+  path: Assets/Kenney/PNG/red_boxCross.png
+  artifactKey: Guid(405cd740139116f49875069a04204ff1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenney/PNG/red_boxCross.png using Guid(405cd740139116f49875069a04204ff1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92eb9a8614e095da5418594e1ac1bd03') in 0.029116 seconds 
+  Import took 0.033609 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000210 seconds.
+  path: Assets/Kenney/PNG/grey_sliderDown.png
+  artifactKey: Guid(9cc0018bc91c6bc44bdbdbf4e40f0e05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenney/PNG/grey_sliderDown.png using Guid(9cc0018bc91c6bc44bdbdbf4e40f0e05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '854663ffe67f44bf5a9f786da5ddc357') in 0.028564 seconds 
+  Import took 0.032821 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000278 seconds.
+  path: Assets/Kenney/PNG/grey_sliderEnd.png
+  artifactKey: Guid(da76950f3b3335441b5951a4ffd28e28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenney/PNG/grey_sliderEnd.png using Guid(da76950f3b3335441b5951a4ffd28e28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '659c907d690858f4415c5d9fc0b28034') in 0.024392 seconds 
+  Import took 0.027728 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000273 seconds.
+  path: Assets/Kenney/PNG/grey_tickWhite.png
+  artifactKey: Guid(aa21fbb49adc8dd4995a88c7310be03a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenney/PNG/grey_tickWhite.png using Guid(aa21fbb49adc8dd4995a88c7310be03a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb20cef1067c0ca5773b1a07f12360d9') in 0.031358 seconds 
+  Import took 0.034028 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000240 seconds.
+  path: Assets/Kenney/PNG/red_boxTick.png
+  artifactKey: Guid(44dbbc085a40a0a43b374cf1d16113ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenney/PNG/red_boxTick.png using Guid(44dbbc085a40a0a43b374cf1d16113ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '071f0b0ce9f1990c467d785fc34f5659') in 0.023033 seconds 
+  Import took 0.026115 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000208 seconds.
+  path: Assets/Kenney/PNG/red_button00.png
+  artifactKey: Guid(bbb2bd54fce158f4981e6628a45e4acf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenney/PNG/red_button00.png using Guid(bbb2bd54fce158f4981e6628a45e4acf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75a6d4348b568ee50792bc720630ecc6') in 0.030991 seconds 
+  Import took 0.033928 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000272 seconds.
+  path: Assets/Kenney/PNG/red_button02.png
+  artifactKey: Guid(3defc18cb8b8bb241bc9aef9fecd132d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenney/PNG/red_button02.png using Guid(3defc18cb8b8bb241bc9aef9fecd132d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e08fe0f1a8bcebaf7f1085283d3a943e') in 0.030011 seconds 
+  Import took 0.033013 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000252 seconds.
+  path: Assets/Kenney/PNG/red_button01.png
+  artifactKey: Guid(76d388b49baabf842ae38965f6222b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenney/PNG/red_button01.png using Guid(76d388b49baabf842ae38965f6222b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebb12673b4b0d1ce90e42b8508ade5bf') in 0.041136 seconds 
+  Import took 0.045565 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000248 seconds.
+  path: Assets/Kenney/PNG/red_button03.png
+  artifactKey: Guid(6c98c700b461caf41bbdc2ac927b8987) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenney/PNG/red_button03.png using Guid(6c98c700b461caf41bbdc2ac927b8987) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '557bb13cfc50e50e669aba90d1d759c8') in 0.032665 seconds 
+  Import took 0.035348 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000239 seconds.
+  path: Assets/Kenney/PNG/grey_sliderRight.png
+  artifactKey: Guid(d817cef107244e44881606832271186b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenney/PNG/grey_sliderRight.png using Guid(d817cef107244e44881606832271186b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bddc8e6321281a0c11320ae311b21945') in 0.032465 seconds 
+  Import took 0.035298 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000360 seconds.
+  path: Assets/Kenney/PNG/grey_tickGrey.png
+  artifactKey: Guid(5a21c4091dd9bf44b95aec9eb067aaab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenney/PNG/grey_tickGrey.png using Guid(5a21c4091dd9bf44b95aec9eb067aaab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fc2b814e9047cecbbc91ddebce0271c') in 0.030663 seconds 
+  Import took 0.038716 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000502 seconds.
+  path: Assets/Kenney/PNG/grey_panel.png
+  artifactKey: Guid(cdba5b310bc626e408772ac9925aef89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenney/PNG/grey_panel.png using Guid(cdba5b310bc626e408772ac9925aef89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7560bd6bff1b959646917c627469894') in 0.028531 seconds 
+  Import took 0.033997 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000323 seconds.
+  path: Assets/Kenney/PNG/grey_button13.png
+  artifactKey: Guid(2c8cf3b931106cb4f82957dff56c1752) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenney/PNG/grey_button13.png using Guid(2c8cf3b931106cb4f82957dff56c1752) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '496c5db96a4b8b4aaf101d41a10c41b1') in 0.035838 seconds 
+  Import took 0.041214 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000357 seconds.
+  path: Assets/Kenney/PNG/grey_button14.png
+  artifactKey: Guid(cc1c3ea3690026f45b0077a0f282b055) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenney/PNG/grey_button14.png using Guid(cc1c3ea3690026f45b0077a0f282b055) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81320484856362681aa4586e11de8943') in 0.027430 seconds 
+  Import took 0.032516 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000284 seconds.
+  path: Assets/Kenney/PNG/grey_sliderUp.png
+  artifactKey: Guid(f45d89f53e208be448fc36cceec62313) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenney/PNG/grey_sliderUp.png using Guid(f45d89f53e208be448fc36cceec62313) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79b9fc60f519bafa8ed23a61d431ff70') in 0.039362 seconds 
+  Import took 0.043243 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.173781 seconds.
+  path: Assets/Kenney/PNG/red_button04.png
+  artifactKey: Guid(3f2dbcfd8f18ada4fa52811369930294) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenney/PNG/red_button04.png using Guid(3f2dbcfd8f18ada4fa52811369930294) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4c530fdd2cf44da33f8512914a41b74') in 0.020745 seconds 
+  Import took 0.023741 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000317 seconds.
+  path: Assets/Kenney/PNG/red_button05.png
+  artifactKey: Guid(4404c98f8f3586342a3d95ac407982e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenney/PNG/red_button05.png using Guid(4404c98f8f3586342a3d95ac407982e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b10a613b235f7cbd6f26efbb6618ec30') in 0.027870 seconds 
+  Import took 0.030740 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000372 seconds.
+  path: Assets/Kenney/PNG/red_button08.png
+  artifactKey: Guid(c43c99e7155c23844ad5ffb1bfeef557) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenney/PNG/red_button08.png using Guid(c43c99e7155c23844ad5ffb1bfeef557) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fbbf29c18b70acc93bf456efb8fd47e') in 0.018684 seconds 
+  Import took 0.021313 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000262 seconds.
+  path: Assets/Kenney/PNG/red_button07.png
+  artifactKey: Guid(fbada18fc06174f4590de04cddc7d8ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenney/PNG/red_button07.png using Guid(fbada18fc06174f4590de04cddc7d8ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a57119331f4960f5b05f09e142e947f') in 0.020874 seconds 
+  Import took 0.023712 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000261 seconds.
+  path: Assets/Kenney/PNG/red_button06.png
+  artifactKey: Guid(60f648bcf2ddc344d9b385d8fdc45964) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenney/PNG/red_button06.png using Guid(60f648bcf2ddc344d9b385d8fdc45964) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd22c790f7222dfa996bdc2a69bb5c65b') in 0.027655 seconds 
+  Import took 0.030890 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000340 seconds.
+  path: Assets/Kenney/PNG/red_button09.png
+  artifactKey: Guid(e063a2282f5bb424f83f8792650ac995) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenney/PNG/red_button09.png using Guid(e063a2282f5bb424f83f8792650ac995) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd877a220c691fddef1f8d0d54c749423') in 0.024090 seconds 
+  Import took 0.028482 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.033260 seconds.
+  path: Assets/Kenney/PNG/red_button10.png
+  artifactKey: Guid(8937758fe6e03c84d85e3b84333889ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenney/PNG/red_button10.png using Guid(8937758fe6e03c84d85e3b84333889ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c858e483bfaf618415b9dfdb2c3a7b45') in 0.027484 seconds 
+  Import took 0.030869 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000286 seconds.
+  path: Assets/Kenney/PNG/red_button11.png
+  artifactKey: Guid(2bf472a20ae43a94d8f91ba9bc4b1953) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenney/PNG/red_button11.png using Guid(2bf472a20ae43a94d8f91ba9bc4b1953) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '216f8e3f8f3623e78f883d7ff1761a19') in 0.032636 seconds 
+  Import took 0.036532 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000344 seconds.
+  path: Assets/Kenney/PNG/yellow_boxTick.png
+  artifactKey: Guid(c6e5bf1e4fd585f4d863c21049141e0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenney/PNG/yellow_boxTick.png using Guid(c6e5bf1e4fd585f4d863c21049141e0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '593558adb771a1933fc155fbe9624c92') in 0.026809 seconds 
+  Import took 0.029845 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000273 seconds.
+  path: Assets/Kenney/PNG/red_checkmark.png
+  artifactKey: Guid(c5eb3b3160b500043a01a1b65df55e78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenney/PNG/red_checkmark.png using Guid(c5eb3b3160b500043a01a1b65df55e78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '329d5bd1c4bdd44dd2b481ada563407e') in 0.027372 seconds 
+  Import took 0.031838 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000266 seconds.
+  path: Assets/Kenney/PNG/red_button12.png
+  artifactKey: Guid(661f8028971f9494085a97ac79006b22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenney/PNG/red_button12.png using Guid(661f8028971f9494085a97ac79006b22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab5808efe3d901a22ad9446ba8132c6a') in 0.031927 seconds 
+  Import took 0.034936 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000209 seconds.
+  path: Assets/Kenney/PNG/yellow_boxCheckmark.png
+  artifactKey: Guid(cfd115c9e5cccc24ebbd37d1864d7548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenney/PNG/yellow_boxCheckmark.png using Guid(cfd115c9e5cccc24ebbd37d1864d7548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6527d1a1b98be224b62302fa019838e') in 0.024749 seconds 
+  Import took 0.027563 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000444 seconds.
+  path: Assets/Kenney/PNG/red_cross.png
+  artifactKey: Guid(8b2918b84432f1341b9861f5b35a3a6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenney/PNG/red_cross.png using Guid(8b2918b84432f1341b9861f5b35a3a6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40512091fae8272939a58c589217c219') in 0.037894 seconds 
+  Import took 0.041709 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000262 seconds.
+  path: Assets/Kenney/PNG/red_sliderLeft.png
+  artifactKey: Guid(87634ebdf4faf17408886b80627cc6a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenney/PNG/red_sliderLeft.png using Guid(87634ebdf4faf17408886b80627cc6a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f8af394fc603e3babba582c11a403fe') in 0.029942 seconds 
+  Import took 0.033465 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000416 seconds.
+  path: Assets/Kenney/PNG/red_panel.png
+  artifactKey: Guid(6434779941d5ed645beb0e91492b9070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenney/PNG/red_panel.png using Guid(6434779941d5ed645beb0e91492b9070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36007602a65577142cf6c88e2e0a3cc0') in 0.031328 seconds 
+  Import took 0.034186 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000268 seconds.
+  path: Assets/Kenney/PNG/red_sliderDown.png
+  artifactKey: Guid(60c8082ee286a484cbbd508f4186f065) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenney/PNG/red_sliderDown.png using Guid(60c8082ee286a484cbbd508f4186f065) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b36f767e1aa3890bc2cf8c21d906a405') in 0.032137 seconds 
+  Import took 0.037166 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000240 seconds.
+  path: Assets/Kenney/PNG/red_sliderUp.png
+  artifactKey: Guid(06dd94024fedb3b46b8bb58ba57f0b5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenney/PNG/red_sliderUp.png using Guid(06dd94024fedb3b46b8bb58ba57f0b5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbba723223899b667dd2e7d625a41e5f') in 0.024246 seconds 
+  Import took 0.027694 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000336 seconds.
+  path: Assets/Kenney/PNG/red_sliderRight.png
+  artifactKey: Guid(cb6ab6866af924d41853e315d57657ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenney/PNG/red_sliderRight.png using Guid(cb6ab6866af924d41853e315d57657ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6ecc6fc012f4f726e3b840e1b2a6c8a') in 0.029722 seconds 
+  Import took 0.033511 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000238 seconds.
+  path: Assets/Kenney/PNG/red_tick.png
+  artifactKey: Guid(4aa096639221100409d1c1f8e625b89b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenney/PNG/red_tick.png using Guid(4aa096639221100409d1c1f8e625b89b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '177e245aa41537122c4da2b95b5216ee') in 0.024358 seconds 
+  Import took 0.027314 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000414 seconds.
+  path: Assets/Kenney/PNG/yellow_boxCross.png
+  artifactKey: Guid(854139fe50a875c43a13716998490511) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenney/PNG/yellow_boxCross.png using Guid(854139fe50a875c43a13716998490511) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd56d6bb5b3b4c1bb8c2057cfaed840d1') in 0.027029 seconds 
+  Import took 0.030569 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000239 seconds.
+  path: Assets/Kenney/PNG/red_button13.png
+  artifactKey: Guid(b5802b47545fff84aa690758c052858f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenney/PNG/red_button13.png using Guid(b5802b47545fff84aa690758c052858f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6651cb221f08024f780f19b6ae2e5e2d') in 0.026515 seconds 
+  Import took 0.029912 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000639 seconds.
+  path: Assets/Kenney/PNG/red_circle.png
+  artifactKey: Guid(a2153583370d7484e824dfe673e1a172) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenney/PNG/red_circle.png using Guid(a2153583370d7484e824dfe673e1a172) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '647b6b6e572f60c39c271a86aa04ed7b') in 0.025897 seconds 
+  Import took 0.029833 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.378128 seconds.
+  path: Assets/Kenney/PNG/red_button04.png
+  artifactKey: Guid(3f2dbcfd8f18ada4fa52811369930294) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenney/PNG/red_button04.png using Guid(3f2dbcfd8f18ada4fa52811369930294) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e928b719fda684142f92c9a45f46dd2') in 0.054656 seconds 
+  Import took 0.057699 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.821715 seconds.
+  path: Assets/Kenney/PNG/red_button04.png
+  artifactKey: Guid(3f2dbcfd8f18ada4fa52811369930294) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenney/PNG/red_button04.png using Guid(3f2dbcfd8f18ada4fa52811369930294) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f97d535dd846dae5c66a1245c237a57') in 0.021595 seconds 
+  Import took 0.025325 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 19.840138 seconds.
+  path: Assets/Kenney/PNG/red_button04.png
+  artifactKey: Guid(3f2dbcfd8f18ada4fa52811369930294) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenney/PNG/red_button04.png using Guid(3f2dbcfd8f18ada4fa52811369930294) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '926cf817b9dc4e6ff42d5c2e1e1eda4d') in 0.016015 seconds 
+  Import took 0.019930 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006426 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.35 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.000 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.38 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1421 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 73.0 MB.
+System memory in use after: 73.1 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 1885.
+Total: 2.699700 ms (FindLiveObjects: 0.142400 ms CreateObjectMapping: 0.056700 ms MarkObjects: 2.478000 ms  DeleteObjects: 0.021000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 119.825937 seconds.
+  path: Assets/Kenney/PNG/red_button08.png
+  artifactKey: Guid(c43c99e7155c23844ad5ffb1bfeef557) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenney/PNG/red_button08.png using Guid(c43c99e7155c23844ad5ffb1bfeef557) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c6fa6f11f532d9d1261dae04be6e6af') in 0.056630 seconds 
+  Import took 0.059095 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.390700 seconds.
+  path: Assets/Kenney/PNG/red_button08.png
+  artifactKey: Guid(c43c99e7155c23844ad5ffb1bfeef557) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kenney/PNG/red_button08.png using Guid(c43c99e7155c23844ad5ffb1bfeef557) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e1971d3e8ab8d4122e060370a4cc449') in 0.024956 seconds 
+  Import took 0.031194 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.010330 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 2.53 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.000 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.75 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1421 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 73.0 MB.
+System memory in use after: 73.1 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 1889.
+Total: 2.640700 ms (FindLiveObjects: 0.177500 ms CreateObjectMapping: 0.064900 ms MarkObjects: 2.377200 ms  DeleteObjects: 0.019200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 

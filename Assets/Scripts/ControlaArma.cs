@@ -16,7 +16,7 @@ public class ControlaArma : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (gameObject.GetComponent<ControlaJogador>().vivo)
+        if (gameObject.GetComponent<ControlaJogador>().vida > 0)
         {
             if (Input.GetButtonDown("Fire1"))
             {

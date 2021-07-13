@@ -6,6 +6,7 @@ public class ControlaInimigo : MonoBehaviour
 {
     public float velocidade = 5;
     public float distanciaMinima = 2.5f;
+    public int ataque = 10;
     
     private GameObject jogador;
     private Rigidbody rb;
@@ -50,14 +51,12 @@ public class ControlaInimigo : MonoBehaviour
             animator.SetBool("Atacando", true);
         }
 
-        rb.MoveRotation(rotacao);
+        rb.MoveRotation(rotacao.normalized);
 
     }
 
     void AtacaJogador()
     {
-        Time.timeScale = 0;
-        jogador.GetComponent<ControlaJogador>().textoGameOver.SetActive(true);
-        jogador.GetComponent<ControlaJogador>().vivo = false;
+        jogador.GetComponent<ControlaJogador>().DanificaJogador(ataque);
     }
 }

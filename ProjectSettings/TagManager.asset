@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Inimigo
+  - UI
   layers:
   - Default
   - TransparentFX

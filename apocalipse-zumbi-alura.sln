@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{28BBA9C8-DEB4-3DCF-DCFA-4A7236070067}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.2D.Sprite.Editor", "Unity.2D.Sprite.Editor.csproj", "{C7BB0728-9236-DDAF-4EF6-3A23108F90EC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{28BBA9C8-DEB4-3DCF-DCFA-4A7236070067}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{28BBA9C8-DEB4-3DCF-DCFA-4A7236070067}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{28BBA9C8-DEB4-3DCF-DCFA-4A7236070067}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7BB0728-9236-DDAF-4EF6-3A23108F90EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7BB0728-9236-DDAF-4EF6-3A23108F90EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7BB0728-9236-DDAF-4EF6-3A23108F90EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7BB0728-9236-DDAF-4EF6-3A23108F90EC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

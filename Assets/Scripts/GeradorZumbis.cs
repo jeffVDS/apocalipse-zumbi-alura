@@ -7,6 +7,7 @@ public class GeradorZumbis : MonoBehaviour
     public GameObject zumbi;
     public float intervaloInicialZumbi = 3;
     public float mortesMinimas;
+    public int ataque = 10;
 
     private float contadorTempo = 0;
     private float intervaloZumbi;
@@ -33,7 +34,7 @@ public class GeradorZumbis : MonoBehaviour
             contadorTempo = 0;
             
             if(quantidadeMortes >= mortesMinimas)
-                Instantiate(zumbi, transform.position, transform.rotation);
+                Instantiate(zumbi, transform.position, transform.rotation).GetComponent<ControlaInimigo>().ataque = ataque;
 
         }
 

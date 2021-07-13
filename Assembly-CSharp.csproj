@@ -62,9 +62,16 @@
     <Compile Include="Assets\Scripts\ControlaJogador.cs" />
     <Compile Include="Assets\Scripts\GeradorZumbis.cs" />
     <Compile Include="Assets\Scripts\Bala.cs" />
+    <Compile Include="Assets\Scripts\ControlaInterface.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Kenney\Spritesheet\greenSheet.xml" />
+    <None Include="Assets\Kenney\Spritesheet\blueSheet.xml" />
+    <None Include="Assets\Kenney\Spritesheet\greySheet.xml" />
+    <None Include="Assets\Kenney\Spritesheet\redSheet.xml" />
+    <None Include="Assets\Kenney\Spritesheet\yellowSheet.xml" />
     <None Include="Assets\Modelos3D\Personagens\Animacoes\Animacoes.txt" />
+    <None Include="Assets\Kenney\license.txt" />
     <None Include="Assets\Modelos3D\Personagens\Animacoes\Animacoes_Zumbi.txt" />
   </ItemGroup>
   <ItemGroup>
@@ -661,6 +668,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Unity.2D.Sprite.Editor.csproj">
+      <Project>{C7BB0728-9236-DDAF-4EF6-3A23108F90EC}</Project>
+      <Name>Unity.2D.Sprite.Editor</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

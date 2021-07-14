@@ -12,12 +12,13 @@ public class ControlaJogador : MonoBehaviour
     public Text textoKillCount;
     public int killCount;
     public int vida = 100;
-
+    public AudioClip somDeDano;
 
     private Rigidbody rigidBody;
     private Vector3 direcao;
     private Vector3 movimentoNormalizado;
     private ControlaInterface controlaInterface;
+    private Vector3 lastPosition;
 
     void Start(){
         rigidBody = GetComponent<Rigidbody>();
@@ -88,6 +89,8 @@ public class ControlaJogador : MonoBehaviour
         vida -= dano;
         
         controlaInterface.AtualizaSliderVida(vida);
+
+        ControlaAudio.instancia.PlayOneShot(somDeDano);
 
         if (vida <= 0)
         {

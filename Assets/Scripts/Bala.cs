@@ -6,7 +6,8 @@ public class Bala : MonoBehaviour
 {
     private Rigidbody rb;
     private GameObject jogador;
-    
+
+    public AudioClip somDeMorte;
     public float velocidade = 20;
     
 
@@ -29,8 +30,10 @@ public class Bala : MonoBehaviour
         {
             Destroy(objetoColidido.gameObject);
             jogador.GetComponent<ControlaJogador>().killCount++;
+            ControlaAudio.instancia.PlayOneShot(somDeMorte);
         }
 
         Destroy(this.gameObject);
+
     }
 }

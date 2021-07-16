@@ -6,8 +6,6 @@ public class Bala : MonoBehaviour
 {
     private Rigidbody rb;
     private GameObject jogador;
-
-    public AudioClip somDeMorte;
     public float velocidade = 20;
     
 
@@ -28,9 +26,11 @@ public class Bala : MonoBehaviour
     {
         if (objetoColidido.CompareTag("Inimigo"))
         {
-            Destroy(objetoColidido.gameObject);
-            jogador.GetComponent<ControlaJogador>().killCount++;
-            ControlaAudio.instancia.PlayOneShot(somDeMorte);
+            var controleJogador = jogador.GetComponent<ControlaJogador>();
+
+            controleJogador.killCount++;
+
+            objetoColidido.gameObject.GetComponent<ControlaInimigo>().DanoSofrido(controleJogador.status.danoAtaque);
         }
 
         Destroy(this.gameObject);

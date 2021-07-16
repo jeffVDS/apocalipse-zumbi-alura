@@ -643,8 +643,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcf7fed8c3373584bb4e75f7ca7ae668, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidade: 5
   distanciaMinima: 2.5
+  status:
+    vidaMax: 0
+    vida: 0
+    velocidade: 0
+    danoAtaque: 0
+  somDeMorte: {fileID: 8300000, guid: 84b314b4a299cf941ad5035679643f5b, type: 3}
 --- !u!54 &4492202302972754104
 Rigidbody:
   m_ObjectHideFlags: 0

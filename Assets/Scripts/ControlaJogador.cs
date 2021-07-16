@@ -1,27 +1,28 @@
+using Assets.Scripts;
+using Scripts.Utils;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class ControlaJogador : MonoBehaviour
+public class ControlaJogador : MonoBehaviour, IMatavel
 {
-    public float velocidade = 10;
     public LayerMask mascaraChao;
     public GameObject textoGameOver;
     public Text textoKillCount;
     public int killCount;
-    public int vida = 100;
     public AudioClip somDeDano;
+    public Status status;
 
-    private Rigidbody rigidBody;
+    private Rigidbody rb;
     private Vector3 direcao;
     private Vector3 movimentoNormalizado;
     private ControlaInterface controlaInterface;
     private Vector3 lastPosition;
 
     void Start(){
-        rigidBody = GetComponent<Rigidbody>();
+        rb = GetComponent<Rigidbody>();
 
         controlaInterface = GameObject.FindWithTag("UI").GetComponent<ControlaInterface>();
 
@@ -29,13 +30,13 @@ public class ControlaJogador : MonoBehaviour
         textoKillCount.gameObject.SetActive(true);
         
         Time.timeScale = 1;
+
+        status.IniciaVida();
     }
 
     void Update()
     {
-        
-
-        if (vida > 0)
+        if (!status.Morto)
         {
             textoKillCount.text = "Matou " + killCount;
 
@@ -44,7 +45,7 @@ public class ControlaJogador : MonoBehaviour
 
             direcao = new Vector3(eixoX, 0, eixoZ);
 
-            GetComponent<Animator>().SetBool("movendo", (direcao != Vector3.zero));
+            GetComponent<Animator>().SetFloat("movendo", direcao.magnitude);
         }
         else
         {
@@ -58,44 +59,49 @@ public class ControlaJogador : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (vida > 0)
+        if (!status.Morto)
         {
-            movimentoNormalizado = (direcao) * Time.deltaTime * velocidade;
+            rb.MovePosition(MovimentoPersonagem.NovaPosicao(rb.position, direcao, status.velocidade));
 
-            var novaPosicao = rigidBody.position + movimentoNormalizado;
-
-            rigidBody.MovePosition(novaPosicao);
-
-            Ray raio = Camera.main.ScreenPointToRay(Input.mousePosition);
-
-            RaycastHit raioChaoHit;
-
-            if (Physics.Raycast(raio, out raioChaoHit, 100, mascaraChao.value))
-            {
-                Vector3 posicaoMiraJogador = raioChaoHit.point - transform.position;
-
-                posicaoMiraJogador.y = transform.position.y;
-
-                Quaternion novaRotacao = Quaternion.LookRotation(posicaoMiraJogador);
-
-                this.rigidBody.MoveRotation(novaRotacao);
-            }
+            rb.MoveRotation(PosicaoMira());
         }
     }
 
-    public void DanificaJogador(int dano)
+    private Quaternion PosicaoMira()
     {
+        Ray raio = Camera.main.ScreenPointToRay(Input.mousePosition);
+
+        RaycastHit raioChaoHit;
+
+        if (Physics.Raycast(raio, out raioChaoHit, 100, mascaraChao.value))
+        {
+            Vector3 posicaoMiraJogador = raioChaoHit.point - transform.position;
+
+            posicaoMiraJogador.y = transform.position.y;
+
+           return MovimentoPersonagem.NovaRotacao(posicaoMiraJogador);
+        }
+
+        return rb.rotation;
+    }
+
+    public void DanoSofrido(int dano)
+    {
+        status.DanoSofrido(dano);
         
-        vida -= dano;
-        
-        controlaInterface.AtualizaSliderVida(vida);
+        controlaInterface.AtualizaSliderVida(status.vida);
 
         ControlaAudio.instancia.PlayOneShot(somDeDano);
 
-        if (vida <= 0)
+        if (status.Morto)
         {
-            textoGameOver.SetActive(true);
-            Time.timeScale = 0;
+            Morrer();
         }
+    }
+
+    public void Morrer()
+    {
+        textoGameOver.SetActive(true);
+        Time.timeScale = 0;
     }
 }

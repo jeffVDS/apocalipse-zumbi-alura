@@ -1,13 +1,15 @@
+using Assets.Scripts;
+using Scripts.Utils;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ControlaInimigo : MonoBehaviour
+public class ControlaInimigo : MonoBehaviour, IMatavel
 {
-    public float velocidade = 5;
     public float distanciaMinima = 2.5f;
-    public int ataque = 10;
-    
+    public Status status;
+    public AudioClip somDeMorte;
+
     private GameObject jogador;
     private Rigidbody rb;
     private Vector3 direcao;
@@ -23,40 +25,54 @@ public class ControlaInimigo : MonoBehaviour
         animator = GetComponent<Animator>();
         jogador = GameObject.FindWithTag("Player");
 
-        int roupaZumbi = Random.Range(1,28);
-
-        this.transform.GetChild(roupaZumbi).gameObject.SetActive(true);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        direcao = jogador.transform.position - transform.position;
-        rotacao = Quaternion.LookRotation(direcao);
-
+        DefineZumbi();
     }
 
     private void FixedUpdate()
     {
+        direcao = jogador.transform.position - transform.position;
+
         float distancia = Vector3.Distance(rb.position, jogador.transform.position);
 
         if (distancia > distanciaMinima)
         {
-            rb.MovePosition(rb.position + (direcao.normalized * velocidade * Time.deltaTime));
+            rb.MovePosition(MovimentoPersonagem.NovaPosicao(rb.position, direcao, status.velocidade));
 
-            animator.SetBool("Atacando", false);
+            animator.SetBool("atacando", false);
         }
         else
         {
-            animator.SetBool("Atacando", true);
+            animator.SetBool("atacando", true);
         }
 
-        rb.MoveRotation(rotacao.normalized);
-
+        rb.MoveRotation(MovimentoPersonagem.NovaRotacao(direcao));
     }
 
     void AtacaJogador()
     {
-        jogador.GetComponent<ControlaJogador>().DanificaJogador(ataque);
+        jogador.GetComponent<ControlaJogador>().DanoSofrido(status.danoAtaque);
+    }
+
+    void DefineZumbi()
+    {
+        int roupaZumbi = Random.Range(1, 28);
+
+        transform.GetChild(roupaZumbi).gameObject.SetActive(true);
+    }
+
+    public void DanoSofrido(int dano)
+    {
+        status.DanoSofrido(dano);
+        
+        if (status.Morto)
+        {
+            Morrer();
+        }
+    }
+
+    public void Morrer()
+    {
+        ControlaAudio.instancia.PlayOneShot(somDeMorte);
+        Destroy(gameObject);
     }
 }

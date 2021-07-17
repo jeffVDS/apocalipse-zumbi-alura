@@ -24,7 +24,7 @@ public class Bala : MonoBehaviour
 
     private void OnTriggerEnter(Collider objetoColidido)
     {
-        if (objetoColidido.CompareTag("Inimigo"))
+        if (objetoColidido.CompareTag("Inimigo") || objetoColidido.CompareTag("Boss"))
         {
             var controleJogador = jogador.GetComponent<ControlaJogador>();
 

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Inimigo
   - UI
+  - Boss
   layers:
   - Default
   - TransparentFX
@@ -13,7 +14,7 @@ TagManager:
   - Chao
   - Water
   - UI
-  - 
+  - Zumbi
   - 
   - 
   - 

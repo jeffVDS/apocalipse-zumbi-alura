@@ -22,5 +22,13 @@ namespace Scripts.Utils
             return Quaternion.LookRotation(direcao.normalized); ;
         }
 
+        public static Vector3 GeraPosicaoDentroRaio(Vector3 posicaoAtual, float raio)
+        {
+            var posicao = UnityEngine.Random.insideUnitSphere * raio;
+            posicao += posicaoAtual;
+            posicao.y = posicaoAtual.y;
+            return posicao;
+        }
+
     }
 }

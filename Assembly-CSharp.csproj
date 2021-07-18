@@ -61,11 +61,11 @@
     <Compile Include="Assets\Scripts\ControlaCamera.cs" />
     <Compile Include="Assets\Scripts\ControlaInterface.cs" />
     <Compile Include="Assets\Scripts\ControlaAudio.cs" />
+    <Compile Include="Assets\Scripts\Status.cs" />
     <Compile Include="Assets\Scripts\ControlaJogador.cs" />
     <Compile Include="Assets\Scripts\Utils\MovimentoPersonagem.cs" />
     <Compile Include="Assets\Scripts\GeradorZumbis.cs" />
     <Compile Include="Assets\Scripts\Bala.cs" />
-    <Compile Include="Assets\Scripts\Status.cs" />
     <Compile Include="Assets\Scripts\Interfaces\IMatavel.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -75,6 +75,7 @@
     <None Include="Assets\Kenney\Spritesheet\redSheet.xml" />
     <None Include="Assets\Kenney\Spritesheet\yellowSheet.xml" />
     <None Include="Assets\Modelos3D\Personagens\Animacoes\Animacoes.txt" />
+    <None Include="Assets\Fonts\MELTED\! ! ! TERMS OF USE.txt" />
     <None Include="Assets\Kenney\license.txt" />
     <None Include="Assets\Modelos3D\Personagens\Animacoes\Animacoes_Zumbi.txt" />
   </ItemGroup>

@@ -61,6 +61,7 @@ public class ControlaInimigo : MonoBehaviour, IMatavel
         }
         else
         {
+            direcao = jogador.transform.position - rb.position;
             animator.SetBool("atacando", true);
         }
         GetComponent<Animator>().SetFloat("movendo", direcao.magnitude);

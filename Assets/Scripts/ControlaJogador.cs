@@ -9,8 +9,6 @@ using UnityEngine.UI;
 public class ControlaJogador : MonoBehaviour, IMatavel
 {
     public LayerMask mascaraChao;
-    public GameObject textoGameOver;
-    public Text textoKillCount;
     public int killCount;
     public AudioClip somDeDano;
     public Status status;
@@ -27,9 +25,6 @@ public class ControlaJogador : MonoBehaviour, IMatavel
         controlaInterface = GameObject.FindWithTag("UI").GetComponent<ControlaInterface>();
 
         killCount = 0;
-        textoKillCount.gameObject.SetActive(true);
-        
-        Time.timeScale = 1;
 
         status.IniciaVida();
     }
@@ -38,21 +33,12 @@ public class ControlaJogador : MonoBehaviour, IMatavel
     {
         if (!status.Morto)
         {
-            textoKillCount.text = "Matou " + killCount;
-
             float eixoX = Input.GetAxis("Horizontal");
             float eixoZ = Input.GetAxis("Vertical");
 
             direcao = new Vector3(eixoX, 0, eixoZ);
 
             GetComponent<Animator>().SetFloat("movendo", direcao.magnitude);
-        }
-        else
-        {
-            if (Input.GetButtonDown("Fire1"))
-            {
-                SceneManager.LoadScene("Game");
-            }
         }
 
     }
@@ -101,7 +87,8 @@ public class ControlaJogador : MonoBehaviour, IMatavel
 
     public void Morrer()
     {
-        textoGameOver.SetActive(true);
-        Time.timeScale = 0;
+        GameObject.FindWithTag("UI").GetComponent<ControlaInterface>().EncerraPartida();
     }
+
+   
 }
